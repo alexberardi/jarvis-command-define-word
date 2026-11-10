@@ -1,0 +1,32 @@
+schema_version: 1
+name: define_word
+display_name: Define Word
+description: Looks up the definition of an English word using the free Dictionary API and speaks a short definition with its part of speech, a usage example and the word's etymology when available.
+version: 0.1.0
+author:
+  github: community
+keywords:
+  - define
+  - definition
+  - meaning
+  - dictionary
+  - word
+  - look up
+  - etymology
+  - origin
+categories:
+  - information
+  - utilities
+platforms: []
+parameters:
+  - name: word
+    type: string
+    required: true
+    description: The English word (or short phrase) to define
+secrets: []
+packages:
+  - name: requests
+    version: ">=2.28.0"
+min_jarvis_version: "0.9.0"
+license: MIT
+homepage: https://dictionaryapi.dev
